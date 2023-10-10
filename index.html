@@ -95,7 +95,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="新建主题并配置"><a href="#新建主题并配置" class="headerlink" title="新建主题并配置"></a>新建主题并配置</h1><p>1.在themes目录下新建一个文件夹，起个名字，例如polan</p>
+<p>2.修改跟目录下_config.yml,这是Hexo的配置文件，将主题修改为已创建的主题的名字，polan</p>
+<p>3.在polan文件夹下新建layout文件夹，在layout下新建layout.ejs文件与index.ejs文件。layout.ejs是主题的入口，index.ejs是必需文件。</p>
+<p>4.编辑layout.ejs内容如下<br><!DOCTYPE html></p>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Smileyan</title>
+</head>
+
+<body>
+     这是入口
+</body>
+
+</html>
       
     </div>
     <footer class="article-footer">
@@ -137,8 +151,14 @@
 <p>提升或降低标题等级可以进入源代码模式添加“#”，也可以使用快捷键crt+&#x3D;增加标题级别，crtl+-降低标题级别</p>
 <h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>字体加粗              ** **                 <strong>字体加粗</strong><br>字体倾斜              * *                   <em>字体倾斜</em><br>字体加粗+倾斜         *** ***               <em><strong>加粗+倾斜</strong></em><br>字体划掉              ~~ ~~                 <del>字体划掉</del></p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>引用其他人的东西 &gt;</p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线使用 —或者***</p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>“|名字|性别|生日|<br>|–|–|–|<br>|张三|男|1999|”</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>分割线使用 —或者***</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>上传本地图片直接拖进去</p>
+<p><code>！【图片alt】(图片地址 “图片title”)</code></p>
+<p>图片alt是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移动到图片上是显示的内容。title可加可不加。</p>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><code>[超链接名]（超链接地址“超链接title”）</code><br>比如<br><a target="_blank" rel="noopener" href="http://baidu.com/">baidu</a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|名字|性别|生日|</span><br><span class="line">|--|--|--|</span><br><span class="line">|张三|男|1999</span><br></pre></td></tr></table></figure>
+
+
 <table>
 <thead>
 <tr>
@@ -153,6 +173,10 @@
 <td>1999</td>
 </tr>
 </tbody></table>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>单行代码：代码两边分别用反引号包起来。</p>
+<p> <code>单行代码 </code></p>
+<p>代码块：两边分别用三个反引号包起来，反引号独占一行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">代码块</span><br><span class="line">代码块</span><br><span class="line">代码块</span><br></pre></td></tr></table></figure>
 
       
     </div>
